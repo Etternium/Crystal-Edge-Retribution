@@ -1,0 +1,3 @@
+rep "Hack and Slash@Happy_Clouds@cloud"
+  path "/"
+    smartbranch "/main"
