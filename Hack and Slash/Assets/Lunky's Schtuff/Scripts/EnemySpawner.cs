@@ -12,10 +12,12 @@ public class EnemySpawner : MonoBehaviour
     public GameObject normalEnemyPrefab, rangedEnemyPrefab, beefyEnemyPrefab;
     public LayerMask enemyMask;
     public float radius = 20f;
+    public int skillPointsToGive;
     public TextMeshProUGUI waveText;
+    public SkillTreeUIScript skillTreeUI;
 
     int z = 0;
-    bool active = false;
+    bool active = false, skillPointsGiven = false;
     Collider[] enemies;
     List<GameObject> enemyList = new List<GameObject>();
 
@@ -63,7 +65,8 @@ public class EnemySpawner : MonoBehaviour
 
         else if (z == normalEnemiesPerWave.Length - 1)
         {
-            waveText.text = "Combat arena cleared";
+            waveText.text = "Combat arena cleared. You've earned " + skillPointsToGive + " skill points";
+            GiveSkillPoints();
             //add skill points either here or below
         }
 
@@ -79,7 +82,8 @@ public class EnemySpawner : MonoBehaviour
         else if (z == normalEnemiesPerWave.Length)
         {
             z += 0;
-            waveText.text = "Combat arena cleared";
+            waveText.text = "Combat arena cleared. You've earned " + skillPointsToGive + " skill points";
+            GiveSkillPoints();
             //add skill points either here or above
         }
         waveText.gameObject.SetActive(false);
@@ -101,6 +105,18 @@ public class EnemySpawner : MonoBehaviour
             GameObject go = Instantiate(enemy, transform.position, Quaternion.identity);
             enemyList.Add(go);
         }
+    }
+
+    void GiveSkillPoints()
+    {
+        if (!skillPointsGiven)
+        {
+            skillTreeUI.skillTreePoint += skillPointsToGive;
+            skillPointsGiven = true;
+        }
+
+        else
+            return;
     }
 
     private void OnTriggerEnter(Collider other)

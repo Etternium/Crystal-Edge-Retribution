@@ -19,7 +19,7 @@ public class PauseMenuScript : MonoBehaviour
     public GameObject quitMenuUI;
     public GameObject skillMenuUI;
 
-    public GameObject controlTextA, controlTextB, comboText;
+    public GameObject controlTextA, controlTextB, comboText, swordTextA, swordTextB;
 
     public bool difficultyEasy;
     public bool difficultyNormal;
@@ -135,6 +135,7 @@ public class PauseMenuScript : MonoBehaviour
         optionsMenuUI.SetActive(false);
         pauseMenuUI.SetActive(false);
         quitMenuUI.SetActive(false);
+        controlMenuUI.SetActive(false);
         DifficultyMenuActive = true;
         OptionMenuActive = false;
     }
@@ -254,6 +255,8 @@ public class PauseMenuScript : MonoBehaviour
         controlTextA.SetActive(true);
         controlTextB.SetActive(true);
         comboText.SetActive(false);
+        swordTextA.SetActive(false);
+        swordTextB.SetActive(false);
     }
 
     public void ComboText()
@@ -261,6 +264,17 @@ public class PauseMenuScript : MonoBehaviour
         controlTextA.SetActive(false);
         controlTextB.SetActive(false);
         comboText.SetActive(true);
+        swordTextA.SetActive(false);
+        swordTextB.SetActive(false);
+    }
+
+    public void SwordText()
+    {
+        controlTextA.SetActive(false);
+        controlTextB.SetActive(false);
+        comboText.SetActive(false);
+        swordTextA.SetActive(true);
+        swordTextB.SetActive(true);
     }
 
     public void QuitMenu()

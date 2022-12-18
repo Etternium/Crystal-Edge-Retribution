@@ -101,8 +101,8 @@ public class Dave : MonoBehaviour
 
     void Update()
     {
-        grounded = Physics.Raycast(playerModel.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
-        //grounded = Physics.CheckSphere(groundCheck.position, 0.4f, whatIsGround);
+        //grounded = Physics.Raycast(playerModel.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        grounded = Physics.CheckSphere(groundCheck.position, 0.4f, whatIsGround);
         //if (desiredMoveSpeed > 0.1f)
             //Pain();
 

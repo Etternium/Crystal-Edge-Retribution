@@ -60,6 +60,7 @@ public class Combat : MonoBehaviour
     public GameObject VBT;
     public GameObject FBT;
     public GameObject BBT;
+    //public EnemyController_P enemyGO;
 
     public bool doubleAdrenaline;
 
@@ -186,7 +187,7 @@ public class Combat : MonoBehaviour
             foreach (Collider enemy in hitEnemies)
             {
                 if (enemy.GetComponent<TheBox>() == null)
-                    enemy.GetComponent<EnemyController_P>().TakeDamage((int)p_damage); //JS.Added cast to change from float to int
+                    enemy.GetComponent<EnemyController_P>().TakeDamage((int)p_damage);
                 else if (enemy.GetComponent<EnemyController_P>() == null)
                     enemy.GetComponent<TheBox>().TakeDamage();
                 else

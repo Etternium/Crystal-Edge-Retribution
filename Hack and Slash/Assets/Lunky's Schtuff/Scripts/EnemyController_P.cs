@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class EnemyController_P : MonoBehaviour
 {
-    public Combat combat;
+    public Combat combatScript;
     public Enemy enemy;
     public GameObject bloodSplatter;
     public Transform pos;
@@ -88,15 +88,15 @@ public class EnemyController_P : MonoBehaviour
     void Start()
     {
         player = PlayerManager.instance.player.transform;
-        combat = player.GetComponent<Combat>();
-        /*difficultyEasy = GlobalControl.Instance.difficultyEasy;
+        //combat = player.GetComponent<Combat>();
+        difficultyEasy = GlobalControl.Instance.difficultyEasy;
         difficultyNormal = GlobalControl.Instance.difficultyNormal;
-        difficultyHard = GlobalControl.Instance.difficultyHard;*/
+        difficultyHard = GlobalControl.Instance.difficultyHard;
 
         startEnemyHealth = enemy.maxHealth;
         startEnemyDMG = enemy.damage;
 
-        /*if (difficultyEasy == true)
+        if (difficultyEasy == true)
         {
             currHealth = enemy.maxHealth * easyDifficulty;
             currDMG = enemy.damage * easyDifficulty;
@@ -105,12 +105,12 @@ public class EnemyController_P : MonoBehaviour
         {
             currHealth = enemy.maxHealth * hardDifficulty;
             currDMG = enemy.damage * hardDifficulty;
-        }*/
-        //else
-        //{
+        }
+        else
+        {
             currHealth = enemy.maxHealth * normalDifficulty;
             currDMG = enemy.damage * normalDifficulty;
-        //}
+        }
 
         poise = enemy.startingPoise;
 
@@ -180,11 +180,6 @@ public class EnemyController_P : MonoBehaviour
                 healthLost = hardHealth - currHealth;
             }
         }*/
-
-        if (combat.freezeBladeActive == true)
-        {
-            agent.speed = 0f;
-        }
     }
 
     private void FixedUpdate()

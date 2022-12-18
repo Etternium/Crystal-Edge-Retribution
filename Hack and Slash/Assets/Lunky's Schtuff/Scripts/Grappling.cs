@@ -49,7 +49,7 @@ public class Grappling : MonoBehaviour
             grapplingCdTimer -= Time.deltaTime;
 
         if (pm.grounded)
-            overshootYAxis = -1;
+            overshootYAxis = 0;
         else
             overshootYAxis = 0;
     }

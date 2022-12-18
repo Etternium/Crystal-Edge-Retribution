@@ -15,5 +15,5 @@ MonoBehaviour:
   maxHealth: 300
   damage: 15
   startingPoise: 8
-  attackSpeed: 2
+  attackSpeed: 3
   attackRange: 4
