@@ -15,7 +15,7 @@ D:/Faks/Hack and Slash Git/Hack and Slash
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-58176
+61485
 Successfully changed project path to: D:/Faks/Hack and Slash Git/Hack and Slash
 D:/Faks/Hack and Slash Git/Hack and Slash
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/Faks/Hack and Slash Git/Hack and Slash
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 177.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 181.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.6f1 (7da38d85baf6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -63,44 +63,169 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56456
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010314 seconds.
+Registered in 0.012899 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 172.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 170.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.873 seconds
+- Completed reload, in  0.987 seconds
 Domain Reload Profiling:
-	ReloadAssembly (874ms)
-		BeginReloadAssembly (98ms)
+	ReloadAssembly (988ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (644ms)
-			LoadAssemblies (94ms)
+		EndReloadAssembly (691ms)
+			LoadAssemblies (118ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (142ms)
+			SetupTypeCache (169ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (399ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (420ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (13ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (172ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (162ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				RefreshPlugins (171ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (176ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008308 seconds.
+Registered in 0.009230 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Faks\Hack and Slash Git\Hack and Slash\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Faks\Hack and Slash Git\Hack and Slash\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 163.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.242 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3243ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (2771ms)
+			LoadAssemblies (1377ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (373ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (113ms)
+			SetupLoadedEditorAssemblies (862ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (164ms)
+				BeforeProcessingInitializeOnLoad (185ms)
+				ProcessInitializeOnLoadAttributes (388ms)
+				ProcessInitializeOnLoadMethodAttributes (101ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6312 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.7 MB). Loaded Objects now: 6784.
+Memory consumption went from 258.7 MB to 257.0 MB.
+Total: 7.457600 ms (FindLiveObjects: 1.421000 ms CreateObjectMapping: 0.205600 ms MarkObjects: 4.953600 ms  DeleteObjects: 0.875800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 421306.394481 seconds.
+  path: Assets/Lunky's Schtuff/Scenes/DifficultyUI.unity
+  artifactKey: Guid(2166cee3689d0d54f97df135ca74eaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lunky's Schtuff/Scenes/DifficultyUI.unity using Guid(2166cee3689d0d54f97df135ca74eaa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b40570a6e2f323fa4b2b6c0d326989') in 0.017588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Player.prefab
+  artifactKey: Guid(fd8796e98e030944e9041b2409d42b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Player.prefab using Guid(fd8796e98e030944e9041b2409d42b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e826ccfa01378b7bcfcee95d6df8dd9') in 1.294056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 106.104808 seconds.
+  path: Assets/Lunky's Schtuff/Scenes/Dave FPS Controller.unity
+  artifactKey: Guid(1ddb9f6d4ff98994cb59876a5c66b3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lunky's Schtuff/Scenes/Dave FPS Controller.unity using Guid(1ddb9f6d4ff98994cb59876a5c66b3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d96a8fbd403f14a67402358ca47b606') in 0.002689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.675480 seconds.
+  path: Assets/Grapple Point (4).prefab
+  artifactKey: Guid(70ca486e6fc32ab488c55cf64453a7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grapple Point (4).prefab using Guid(70ca486e6fc32ab488c55cf64453a7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4156931158e34aac3769a027f28440af') in 0.016977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 233.585599 seconds.
+  path: Assets/Nighttime.lighting
+  artifactKey: Guid(169387de96850f443b4cff7f8e3bf148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nighttime.lighting using Guid(169387de96850f443b4cff7f8e3bf148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945c75430518785d83cf5826c9a21513') in 0.005929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.515262 seconds.
+  path: Assets/Lunky's Schtuff/Prefabs/Beefy Enemy.prefab
+  artifactKey: Guid(dbaad91ce21d79447a8635de2db3899a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lunky's Schtuff/Prefabs/Beefy Enemy.prefab using Guid(dbaad91ce21d79447a8635de2db3899a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '176f10f5edb41ebbf6d85b93dd2cc701') in 0.073805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Lunky's Schtuff/Prefabs/Ranged Enemy.prefab
+  artifactKey: Guid(e432afea56768814ab4998bb7270c4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lunky's Schtuff/Prefabs/Ranged Enemy.prefab using Guid(e432afea56768814ab4998bb7270c4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Tried select unknown importer for id '-2' '00000000000000000000000000000000'
+ -> (artifact id: '0d35e3f03dc1a67d930027fe4c1f0e20') in 0.064866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 225.537644 seconds.
+  path: Assets/Lunky's Schtuff/Lighting/Night Sky.mat
+  artifactKey: Guid(ab0ad52718c45174dbd05360e6020bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lunky's Schtuff/Lighting/Night Sky.mat using Guid(ab0ad52718c45174dbd05360e6020bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ebc89e717bd26f0c5053b029f15560') in 0.035060 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 38 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (1.7 MB). Loaded Objects now: 6894.
+Memory consumption went from 150.0 MB to 148.4 MB.
+Total: 7.282400 ms (FindLiveObjects: 1.078800 ms CreateObjectMapping: 0.421400 ms MarkObjects: 4.880900 ms  DeleteObjects: 0.900700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

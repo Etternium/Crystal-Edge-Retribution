@@ -7,6 +7,8 @@ using DG.Tweening;
 
 public class EnemyController_P : MonoBehaviour
 {
+    public GameObject mainCamera;
+
     public Combat combatScript;
     public Enemy enemy;
     public GameObject bloodSplatter;
@@ -87,6 +89,8 @@ public class EnemyController_P : MonoBehaviour
 
     void Start()
     {
+        mainCamera = GameObject.Find("Main Camera");
+
         player = PlayerManager.instance.player.transform;
         //combat = player.GetComponent<Combat>();
         difficultyEasy = GlobalControl.Instance.difficultyEasy;
@@ -158,6 +162,8 @@ public class EnemyController_P : MonoBehaviour
             StartCoroutine("DifficultyChange");
             Debug.Log("Difficulty changed");
         }
+
+        healthBarUI.transform.LookAt(mainCamera.transform);
 
         /*if (difficultyEasy == true)
         {

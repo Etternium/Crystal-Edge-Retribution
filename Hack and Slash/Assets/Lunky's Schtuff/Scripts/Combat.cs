@@ -63,6 +63,7 @@ public class Combat : MonoBehaviour
     //public EnemyController_P enemyGO;
 
     public bool doubleAdrenaline;
+    float freezeRadius;
 
     [Header("Health Bar")]
     public Slider healthBar;
@@ -544,7 +545,7 @@ public class Combat : MonoBehaviour
             {
                 freezeBladeActive = true;
                 StartCoroutine("specialBladeTimer");
-                Debug.Log("freeze blade active");
+                 Debug.Log("freeze blade active");
             }
 
         }
@@ -599,6 +600,13 @@ public class Combat : MonoBehaviour
             while (duration >= 0)
             {
                 Debug.Log(value * 10);
+                freezeRadius = 10;
+                Collider[] colliders = Physics.OverlapSphere(transform.position, freezeRadius, enemy);
+
+                foreach (Collider enemy in colliders)
+                {
+                    enemy.GetComponent<EnemyController_P>().TakeDamage(0f);
+                }
                 yield return new WaitForSeconds(0.01f);
                 duration -= 0.01f;
             }

@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d029be1ebfd19d4c8e458dcb088b7d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Camera: {fileID: 0}
+  combatScript: {fileID: 0}
   enemy: {fileID: 11400000, guid: 299faca65792d6940bfbc4c3194542e7, type: 2}
   bloodSplatter: {fileID: 3132603349200328033, guid: 6523838f5bff42044bce3cfd5b5cbcbd, type: 3}
   pos: {fileID: 7379481877070995917}
@@ -127,7 +129,6 @@ MonoBehaviour:
   difficultyEasy: 0
   difficultyNormal: 0
   difficultyHard: 0
-  combat: {fileID: 7216652985846382212, guid: fd8796e98e030944e9041b2409d42b73, type: 3}
   TimeStopSpeed: 0
   playerCombat: {fileID: 7216652985846382212, guid: fd8796e98e030944e9041b2409d42b73, type: 3}
   easyDifficulty: 0.75

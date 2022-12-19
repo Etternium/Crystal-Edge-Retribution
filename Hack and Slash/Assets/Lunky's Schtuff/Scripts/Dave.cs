@@ -341,7 +341,7 @@ public class Dave : MonoBehaviour
     {
         if (dodging)
         {
-            rb.AddForce(transform.forward * moveSpeed * 5f, ForceMode.Force);
+            rb.AddForce(transform.forward * moveSpeed * 10f, ForceMode.Force);
         }
     }
 
